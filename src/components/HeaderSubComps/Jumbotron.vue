@@ -4,7 +4,7 @@
             <div class="col-4 d-flex flex-column justify-content-center me-auto">
                 <h1 class="text-capitalize fw-bold">businness planning</h1>
                 <h1 class="text-capitalize ms-1">digital tecnology</h1>
-                <h1 class="text-capitalize fw-bolder ms-1 mb-4">modern solution!</h1>
+                <h1 class="text-capitalize fw-bolder ms-1 mb-4">modern solution !</h1>
                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque velit ut atque modi veniam officiis ullam incidunt quaerat eligendi.</p>
                 <div>
                     <button class="text-capitalize me-3">try it now</button>
