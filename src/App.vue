@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <header>
-      <h1>header</h1>
       <HeaderNav />
       <Jumbotron />
     </header>
@@ -31,5 +30,9 @@ export default {
 
 <style lang="scss">
 @import './assets/styles/style.scss';
+
+header{
+  @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
+}
 
 </style>

@@ -1,0 +1,18 @@
+$primaryColor: rgb(0, 0, 37);
+$primaryLightColor: rgb(11, 25, 81);
+$buttonPrimary: #527ceb;
+$buttonPrimaryLight: #03a7d3;
+$secondaryColor: #b6246e;
+$secondaryLightColor: #f9636b;
+@mixin betterButton{
+    color: white;
+    border: transparent;
+    border-radius: 50rem;
+    padding: .5rem 1rem;
+}
+@mixin bgGradientTopToBottom ($color1 , $color2){
+    background-image: linear-gradient($color1, $color2);
+}
+@mixin bgGradientLeftToRight ($color1 , $color2){
+    background-image: linear-gradient(to right, $color1, $color2);
+}
