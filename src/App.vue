@@ -32,6 +32,7 @@ export default {
 @import './assets/styles/style.scss';
 
 header{
+  height: 100vh;
   @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
 }
 

@@ -1,10 +1,15 @@
 <template>
     <section id='jumbotron' class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-4 d-flex flex-column justify-content-center me-auto">
                 <h1 class="text-capitalize fw-bold">businness planning</h1>
-                <h1 class="text-capitalize">digital tecnology</h1>
-                <h1 class="text-capitalize fw-bold">modern solution!</h1>
+                <h1 class="text-capitalize ms-1">digital tecnology</h1>
+                <h1 class="text-capitalize fw-bolder ms-1 mb-4">modern solution!</h1>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque velit ut atque modi veniam officiis ullam incidunt quaerat eligendi.</p>
+                <div>
+                    <button class="text-capitalize me-3">try it now</button>
+                    <button class="text-capitalize"> explore more</button>
+                </div>
             </div>
             <div class="col-7">
                 <img class="img-fluid" src="../../assets/images/header.png" alt="Work-Station in office enviroment">
@@ -19,6 +24,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+@import '../../assets/styles/style.scss';
 
+section#jumbotron{
+    color: white;
+    p{
+        color: $buttonPrimaryLight;
+    }
+    button{
+        @include betterButton;
+        @include bgGradientLeftToRight ($buttonPrimaryLight, $buttonPrimary);
+        &:first-child{
+            @include bgGradientLeftToRight ($secondaryColor, $secondaryLightColor)
+        }
+    }
+}
 </style>
