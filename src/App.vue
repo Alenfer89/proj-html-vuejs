@@ -1,21 +1,29 @@
 <template>
   <div id="app">
-    <Header />
+    <header>
+      <h1>header</h1>
+      <HeaderNav />
+      <Jumbotron />
+    </header>
     <main>
       <h1>main</h1>
     </main>
-    <Footer />
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import HeaderNav from './components/HeaderSubComps/HeaderNav.vue';
+import Jumbotron from './components/HeaderSubComps/Jumbotron.vue';
 import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Header,
+    HeaderNav,
+    Jumbotron,
     Footer
   }
 }

@@ -1,9 +1,7 @@
 <template>
-    <header>
-        <h1>header</h1>
-        <HeaderNav />
-        <Jumbotron />
-    </header>
+    <div>
+        <h5>vuoto</h5>
+    </div>
 </template>
 
 <script>
@@ -19,6 +17,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
 
 </style>
