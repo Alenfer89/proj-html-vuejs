@@ -8,6 +8,7 @@
     <main>
       <Services />
       <Businness />
+      <Portfolio />
     </main>
 
     <footer>
@@ -21,6 +22,7 @@ import HeaderNav from './components/HeaderSubComps/HeaderNav.vue';
 import Jumbotron from './components/HeaderSubComps/Jumbotron.vue';
 import Services from './components/SectionServices.vue';
 import Businness from './components/SectionBusinness.vue';
+import Portfolio from './components/SectionPortfolio.vue';
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     Jumbotron,
     Services,
     Businness,
+    Portfolio
   }
 }
 </script>

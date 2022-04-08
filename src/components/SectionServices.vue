@@ -12,7 +12,7 @@
                 :key='index'
                 :service="service" />
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 text-center py-5">
                 <button class="text-capitalize"> view all services</button>
             </div>
         </div>
