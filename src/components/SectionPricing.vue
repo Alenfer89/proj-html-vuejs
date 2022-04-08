@@ -14,7 +14,12 @@
         <div class="container ax-card-container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between">
-                    <PriceTag v-for='(el, index) in 3' :key='index'/>
+
+                    <PriceTag
+                    v-for='(offer, index) in offersList'
+                    :key='index'
+                    :tag='offer'
+                    :index='index'/>
                 </div>
             </div>
         </div>
@@ -28,6 +33,27 @@ export default {
     name: 'SectionPricing',
     components:{
         PriceTag,
+    },
+    data: function(){
+        return{
+            offersList:[
+                {
+                    name: 'designing',
+                    type: 'process',
+                    price: 40
+                },
+                {
+                    name: 'developing',
+                    type: 'product',
+                    price: 80
+                },
+                {
+                    name: 'supporting',
+                    type: 'clients',
+                    price: 60
+                }
+            ]
+        }
     }
 }
 </script>
@@ -36,7 +62,6 @@ export default {
 @import '../assets/styles/style.scss';
 
 section#pricing{
-    
 
     div.ax-bg-placeholder{
         height: 600px;
@@ -50,11 +75,15 @@ section#pricing{
     div.ax-card-container{
         position: relative;
         height: 600px;
-        background-color: rgb(177, 133, 133);
+        //background-color: rgb(177, 133, 133);
         width: 100%;
         bottom: 300px;
         z-index: 1;
+
+        div.ax-price-tag:nth-child(even){
+            @include bgGradientLeftToRight ($secondaryColor , $secondaryLightColor);
+            color: white;
+        }
     }
-    
 }
 </style>
