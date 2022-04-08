@@ -6,7 +6,12 @@
                 <h2 class="text-capitalize mb-3"><span class="ax-bold">what</span> we do</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="col-12"></div>
+            <div class="col-12">
+                <Service
+                v-for='(service, index) in servicesList'
+                :key='index'
+                :service="service" />
+            </div>
             <div class="col-12 text-center">
                 <button class="text-capitalize"> view all services</button>
             </div>
@@ -15,8 +20,12 @@
 </template>
 
 <script>
+import Service from './ServiceCard.vue';
 export default {
     name: 'SectionServices',
+    components:{
+        Service,
+    },
     data: function(){
         return{
             servicesList:[
