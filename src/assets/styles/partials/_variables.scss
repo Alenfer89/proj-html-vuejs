@@ -4,11 +4,14 @@ $buttonPrimary: #527ceb;
 $buttonPrimaryLight: #03a7d3;
 $secondaryColor: #b6246e;
 $secondaryLightColor: #f9636b;
-@mixin betterButton{
+@mixin betterButton($color){
     color: white;
     border: transparent;
     border-radius: 50rem;
     padding: .5rem 2rem;
+    &:hover{
+        box-shadow: 0 0 1rem 0 $color;
+    }
 }
 @mixin bgGradientTopToBottom ($color1 , $color2){
     background-image: linear-gradient($color1, $color2);

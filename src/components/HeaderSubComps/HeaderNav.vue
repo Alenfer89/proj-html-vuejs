@@ -95,7 +95,7 @@ nav{
         }
     }
     button{
-        @include betterButton;
+        @include betterButton($buttonPrimaryLight);
         @include bgGradientLeftToRight($buttonPrimaryLight, $buttonPrimary);
     }
 }

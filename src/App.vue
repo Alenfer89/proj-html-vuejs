@@ -4,11 +4,13 @@
       <HeaderNav />
       <Jumbotron />
     </header>
+
     <main>
-      <h1>main</h1>
+      <Services />
     </main>
+
     <footer>
-      <Footer />
+
     </footer>
   </div>
 </template>
@@ -16,14 +18,14 @@
 <script>
 import HeaderNav from './components/HeaderSubComps/HeaderNav.vue';
 import Jumbotron from './components/HeaderSubComps/Jumbotron.vue';
-import Footer from './components/Footer.vue';
+import Services from './components/SectionServices.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderNav,
     Jumbotron,
-    Footer
+    Services,
   }
 }
 </script>
