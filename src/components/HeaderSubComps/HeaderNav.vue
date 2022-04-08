@@ -95,8 +95,11 @@ nav{
         }
     }
     button{
-        @include betterButton($buttonPrimaryLight);
+        @include betterButton($secondaryLightColor);
         @include bgGradientLeftToRight($buttonPrimaryLight, $buttonPrimary);
+        &:hover{
+            @include bgGradientLeftToRight($secondaryColor, $secondaryLightColor);
+        }
     }
 }
 </style>

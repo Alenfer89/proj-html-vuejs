@@ -33,11 +33,17 @@ section#jumbotron{
         color: $buttonPrimaryLight;
     }
     button{
-        @include betterButton($buttonPrimaryLight);
+        @include betterButton($secondaryLightColor);
         @include bgGradientLeftToRight ($buttonPrimaryLight, $buttonPrimary);
-        &:first-child{
-            @include betterButton($secondaryLightColor);
+        &:hover{
             @include bgGradientLeftToRight ($secondaryColor, $secondaryLightColor)
+        }
+        &:first-child{
+            @include betterButton($buttonPrimaryLight);
+            @include bgGradientLeftToRight ($secondaryColor, $secondaryLightColor);
+            &:hover{
+                @include bgGradientLeftToRight ($buttonPrimaryLight, $buttonPrimary);
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
                 <h2 class="text-capitalize mb-3"><span class="ax-bold">what</span> we do</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="col-12">
+            <div class="col-12 ax-cards-wrapper">
                 <Service
                 v-for='(service, index) in servicesList'
                 :key='index'
@@ -31,22 +31,22 @@ export default {
             servicesList:[
                 {
                     title: 'Data Analisys',
-                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum iste? Voluptas placeat numquam blanditiis, perferendis odio repellat!',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum',
                     image: 'Group-247.png'
                 },
                 {
                     title: 'SEO Optimization',
-                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum iste? Voluptas placeat numquam blanditiis, perferendis odio repellat!',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum',
                     image: 'Group-538.png'
                 },
                 {
                     title: 'Security Data',
-                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum iste? Voluptas placeat numquam blanditiis, perferendis odio repellat!',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum',
                     image: 'Group-566.png'
                 },
                 {
                     title: 'Branding Strategy',
-                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum iste? Voluptas placeat numquam blanditiis, perferendis odio repellat!',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, enim officiis? Perferendis, laudantium magni consequuntur est dicta quas expedita dolor totam illum',
                     image: 'Group-567.png'
                 }
             ]
@@ -61,9 +61,15 @@ section#services{
     p:first-child{
         color: $secondaryLightColor;
     }
+    div.ax-cards-wrapper{
+        padding: 10rem 0;
+    }
     button{
-        @include betterButton($secondaryLightColor);
+        @include betterButton($buttonPrimaryLight);
         @include bgGradientLeftToRight ($secondaryColor, $secondaryLightColor);
+        &:hover{
+            @include bgGradientLeftToRight ($buttonPrimaryLight, $buttonPrimary);
+        }
     }
 }
 </style>
