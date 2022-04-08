@@ -20,3 +20,6 @@ $secondaryLightColor: #f9636b;
 @mixin bgGradientLeftToRight ($color1 , $color2){
     background-image: linear-gradient(to right, $color1, $color2);
 }
+@mixin bgGradientToBottomRight ($color1 , $color2) {
+    background-image: linear-gradient(to bottom right, $color1, $color2);
+}
