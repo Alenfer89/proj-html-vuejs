@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <nav class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-between align-items-center py-4">
                 <!-- logo -->
@@ -7,7 +7,7 @@
                     <img src="../../assets/images/white-logo-2.png" alt="Phlox Corporate Logo" >
                 </div>
                 <!-- nav bar with referrals to sections -->
-                <nav class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center">
                     <ul class="mb-0">
                         <li class="text-capitalize px-2 d-inline-block"
                         v-for='(section, index) in sections'
@@ -18,10 +18,10 @@
                         </li>
                     </ul>
                     <button class="ms-4">Sign-In</button>
-                </nav>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
 </template>
 
 <script>
@@ -79,7 +79,7 @@ export default {
 
 <style lang='scss' scoped>
 @import '../../assets/styles/style.scss';
-section{
+nav{
     color: white;
     ul{
         list-style-type: none;
