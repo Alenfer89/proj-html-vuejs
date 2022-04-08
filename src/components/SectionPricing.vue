@@ -75,9 +75,10 @@ section#pricing{
     div.ax-card-container{
         position: relative;
         height: 600px;
-        //background-color: rgb(177, 133, 133);
+        margin-bottom: -200px;
         width: 100%;
         bottom: 300px;
+        left: 0;
         z-index: 1;
 
         div.ax-price-tag:nth-child(even){

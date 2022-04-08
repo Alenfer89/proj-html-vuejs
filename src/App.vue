@@ -10,6 +10,7 @@
       <Businness />
       <Portfolio />
       <Pricing />
+      <Blog />
     </main>
 
     <footer>
@@ -25,6 +26,7 @@ import Services from './components/SectionServices.vue';
 import Businness from './components/SectionBusinness.vue';
 import Portfolio from './components/SectionPortfolio.vue';
 import Pricing from './components/SectionPricing.vue';
+import Blog from './components/SectionBlog.vue';
 
 export default {
   name: 'App',
@@ -34,7 +36,8 @@ export default {
     Services,
     Businness,
     Portfolio,
-    Pricing
+    Pricing,
+    Blog
   }
 }
 </script>

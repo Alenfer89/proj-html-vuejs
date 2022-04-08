@@ -28,9 +28,7 @@
         <span class="ax-bg-pricing position-absolute text-end">
             {{ tag.price }}
         </span>
-        
     </div>
-    
 </template>
 
 <script>
