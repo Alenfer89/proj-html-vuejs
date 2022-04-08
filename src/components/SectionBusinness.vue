@@ -11,8 +11,9 @@
                 </div>
                 <div class="col-5 p-5 d-flex flex-column justify-content-between">
                     <h6 class="text-capitalize mb-5">start your project</h6>
-                    <h1 class="text-capitalize ax-bold">
-                        grow your businness <br>
+                    <h1 class="text-capitalize">
+                        <span class="ax-bold">grow your businness</span>
+                        <br>
                         with our strategy
                     </h1>
                     <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nam laborum placeat animi quisquam possimus voluptates numquam natus quia ullam delectus quas ducimus pariatur earum optio culpa, amet iste! Nihil.</p>
