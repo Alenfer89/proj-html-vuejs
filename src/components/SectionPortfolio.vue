@@ -29,7 +29,8 @@
                 <div class="col-12 d-flex justify-content-center align-items-center p-5 mt-5">
                     <div class="slider-counter mx-1"
                     v-for='(element, index) in worksList'
-                    :key="'slider' + index">
+                    :key="'slider' + index"
+                    :class="(activeElement == index)? 'active' : ''">
                     </div>
                 </div>
             </div>
@@ -48,6 +49,7 @@ export default {
     },
     data: function(){
         return{
+            activeElement: 2,
             worksList:[
                 {
                     name: 'Purinky Products',
@@ -121,7 +123,7 @@ section#portfolio{
 
     }
     div.slider-counter.active{
-        background-color: $secondaryColor;
+        background-color: $secondaryLightColor;
     }
 }
 </style>

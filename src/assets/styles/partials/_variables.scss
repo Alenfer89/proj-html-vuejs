@@ -9,6 +9,7 @@ $secondaryLightColor: #f9636b;
     border: transparent;
     border-radius: 50rem;
     padding: .5rem 2rem;
+    background-image: linear-gradient(transparent, transparent);
     transition: background-image 2s;
     &:hover{
         box-shadow: 0 0 1rem 0 $color;
