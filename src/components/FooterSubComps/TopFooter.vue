@@ -30,7 +30,7 @@
                     <h4 class="ax-bold mb-4"> Quick Links </h4>
                     <ul class="p-0 m-0">
                         <li v-for='(element,index) in quickLinksList' :key="index">
-                            {{ element }}
+                            <a href=""> {{ element }} </a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
                     <h4 class="ax-bold mb-4"> Resources </h4>
                     <ul class="p-0 m-0">
                         <li class="text-end" v-for='(element,index) in resourcesList' :key="index">
-                            {{ element }}
+                            <a href=""> {{ element }} </a>
                         </li>
                     </ul>
                 </div>
@@ -46,8 +46,10 @@
                     <h4 class="ax-bold mb-4"> Contact Us </h4>
                     <ul class="p-0 m-0">
                         <li v-for='(element,index) in contactsList' :key="index">
-                            <span class="ax-bold"> {{ element.type }} </span>
-                            : {{ element.text }}
+                            <a href="">
+                                <span class="ax-bold"> {{ element.type }} </span>
+                                : {{ element.text }}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -114,8 +116,20 @@ div#footer-tag{
         }
     }
 }
+h4{
+    color: white;
+}
 ul{
         list-style-type: none;
+        li{
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.5);
+                &:hover{
+                    color: white;
+                }
+            }
+        }
     }
 
 </style>

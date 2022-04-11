@@ -14,7 +14,7 @@
       <Testimonial />
     </main>
 
-    <footer class="text-white">
+    <footer>
       <TopFooter />
       <BotFooter />
     </footer>
@@ -59,7 +59,7 @@ header{
   @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
 }
 footer{
-  //height: 100vh;
+  color: rgba(255, 255, 255, 0.5);
   @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
 }
 
