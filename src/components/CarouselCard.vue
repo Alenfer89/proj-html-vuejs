@@ -3,9 +3,9 @@
         <div class="img-wrapper">
             <img :src="require(`../assets/images/${thumb}`)" :alt="name">
         </div>
-        <div class="d-flex justify-content-between align-items-center">
-            <h6 class="ax-bold"> {{ name }} </h6>
-            <p> {{ category }} </p>
+        <div class="d-flex justify-content-between">
+            <h6 class="ax-bold p-2"> {{ name }} </h6>
+            <p class="m-0 p-2"> {{ category }} </p>
         </div>
     </div>
 </template>
