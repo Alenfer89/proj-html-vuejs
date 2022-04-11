@@ -19,9 +19,37 @@
         </div>
         
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>links</h1>
+            <div class="row row-col-4">
+                <div class="col">
+                    <div class="mb-4">
+                        <img src="../../assets/images/white-logo-2.png" alt="Company Logo">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ut quae culpa laudantium? Natus sequi cupiditate</p>
+                </div>
+                <div class="col px-5">
+                    <h4 class="ax-bold mb-4"> Quick Links </h4>
+                    <ul class="p-0 m-0">
+                        <li v-for='(element,index) in quickLinksList' :key="index">
+                            {{ element }}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col px-5">
+                    <h4 class="ax-bold mb-4"> Resources </h4>
+                    <ul class="p-0 m-0">
+                        <li class="text-end" v-for='(element,index) in resourcesList' :key="index">
+                            {{ element }}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col px-5">
+                    <h4 class="ax-bold mb-4"> Contact Us </h4>
+                    <ul class="p-0 m-0">
+                        <li v-for='(element,index) in contactsList' :key="index">
+                            <span class="ax-bold"> {{ element.type }} </span>
+                            : {{ element.text }}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -30,7 +58,27 @@
 
 <script>
 export default {
-    name:'TopFooter'
+    name:'TopFooter',
+    data: function(){
+        return{
+            quickLinksList:['Services', 'Contact', 'Blog'],
+            resourcesList:['Art Design', 'Computer', 'IT News', 'Netwroking', 'Net Security'],
+            contactsList:[
+                {
+                    type:'Address',
+                    text: 'Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051'
+                },
+                {
+                    type: 'Phone',
+                    text: '+99 (0) 101 0000 888'
+                },
+                {
+                    type:'Email',
+                    text: 'Info@yourdomain.com'
+                }
+            ],
+        }
+    }
 }
 </script>
 
@@ -41,9 +89,11 @@ div#footer-tag{
     top: 0;
     left: 0;
     transform: translateY(-50%);
+    
     div.col{
         @include bgGradientLeftToRight ($secondaryColor , $secondaryLightColor);
         height: 12rem;
+        border-radius: 2rem;
     }
     div.ax-input-wrapper{
         border-radius: 50rem;
@@ -64,5 +114,8 @@ div#footer-tag{
         }
     }
 }
+ul{
+        list-style-type: none;
+    }
 
 </style>
