@@ -1,6 +1,6 @@
 <template>
     <section class="position-relative mt-5">
-        <div id="footer-tag" class="position-relative">
+        <div id="footer-tag" class="position-relative text-white">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-between align-items-center p-5 w-50">

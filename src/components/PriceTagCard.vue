@@ -22,7 +22,8 @@
                 </li>
             </ul>
             <button :class="(index % 2 == 0) ? 'ax-odd-button' : 'ax-even-button' ">
-                <span class="me-5">order now</span> -->
+                <span class="me-5">order now</span>
+                <i class="fa-solid fa-right-long"></i>
             </button>
         </div>
         <span class="ax-bg-pricing position-absolute text-end">
