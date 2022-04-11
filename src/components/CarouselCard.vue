@@ -1,5 +1,5 @@
 <template>
-    <div class="ax-carousel-element">
+    <div class="ax-carousel-element shadow">
         <div class="img-wrapper">
             <img :src="require(`../assets/images/${thumb}`)" :alt="name">
         </div>
@@ -24,14 +24,20 @@ export default {
 <style lang='scss' scoped>
 @import '../assets/styles/style.scss';
 div.ax-carousel-element{
-    width: calc(100% - 5rem) / 3;
+    width: calc((100% / 5) - .5rem);
     border-radius: 2rem;
+    &:hover{
+        color: white;
+        cursor: pointer;
+        @include bgGradientLeftToRight ($secondaryColor , $secondaryLightColor);
+    }
 
     div.img-wrapper{
         border-radius: 2rem;
         width: 100%;
         img{
             width: 100%;
+            border-radius: 2rem
         }
     }
 }

@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 d-flex">
+                <div class="col-12 d-flex justify-content-between">
                     <CarouselCard
                     v-for='(element, index) in worksList'
                     :key='index'
@@ -26,7 +26,12 @@
                     :category='element.category'
                     :thumb='element.thumbnail' />
                 </div>
-                <div class="col-12"></div>
+                <div class="col-12 d-flex justify-content-center align-items-center p-5 mt-5">
+                    <div class="slider-counter mx-1"
+                    v-for='(element, index) in worksList'
+                    :key="'slider' + index">
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -104,6 +109,19 @@ section#portfolio{
         height: 300px;
         margin-right: 2rem;
         background-color: aquamarine;
+    }
+    div.slider-counter{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: grey;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    div.slider-counter.active{
+        background-color: $secondaryColor;
     }
 }
 </style>
