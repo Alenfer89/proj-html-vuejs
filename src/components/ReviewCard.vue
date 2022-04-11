@@ -7,11 +7,11 @@
             <p class="mb-4">
                 <i class="fa-solid fa-star"
                 v-for='(element, index) in rating'
-                :key='index'>
+                :key="'full-star ' + index">
                 </i>
                 <i class="fa-regular fa-star"
                 v-for='(element, index) in 5-rating'
-                :key='index'>
+                :key="'empty-star ' + index">
                 </i>
             </p>
             <p> {{ text }} </p>

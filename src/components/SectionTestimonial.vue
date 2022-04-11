@@ -20,7 +20,7 @@
             <div class="row row-cols-5 py-5">
                 <div class="col text-center py-5"
                 v-for='(client, index) in clientsList'
-                :key="index">
+                :key="'our client ' + index">
                     <img :src="require(`../assets/images/${client}`)" alt="">
                 </div>
             </div>

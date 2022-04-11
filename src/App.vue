@@ -14,8 +14,9 @@
       <Testimonial />
     </main>
 
-    <footer>
-
+    <footer class="text-white">
+      <TopFooter />
+      <BotFooter />
     </footer>
   </div>
 </template>
@@ -29,6 +30,9 @@ import Portfolio from './components/SectionPortfolio.vue';
 import Pricing from './components/SectionPricing.vue';
 import Blog from './components/SectionBlog.vue';
 import Testimonial from './components/SectionTestimonial.vue';
+import TopFooter from './components/FooterSubComps/TopFooter.vue';
+import BotFooter from './components/FooterSubComps/BotFooter.vue';
+
 
 export default {
   name: 'App',
@@ -40,7 +44,9 @@ export default {
     Portfolio,
     Pricing,
     Blog,
-    Testimonial
+    Testimonial,
+    TopFooter,
+    BotFooter
   }
 }
 </script>
@@ -50,6 +56,10 @@ export default {
 
 header{
   height: 100vh;
+  @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
+}
+footer{
+  //height: 100vh;
   @include bgGradientTopToBottom($primaryLightColor, $primaryColor)
 }
 
