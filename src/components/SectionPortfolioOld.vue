@@ -1,6 +1,6 @@
 <template>
-  <section id="portfolio">
-    <div class="container py-5">
+  <section id="portfolio" class="py-5">
+    <div class="container">
       <div class="row">
         <div
           class="col-12 d-flex justify-content-between align-items-center py-5"
@@ -19,22 +19,16 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="slider-wrapper">
-        <div class="ax-slider">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between">
           <CarouselCard
             v-for="(element, index) in worksList"
             :key="index"
             :name="element.name"
             :category="element.category"
-            :thumbnail="element.thumbnail"
+            :thumb="element.thumbnail"
           />
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
         <div
           class="col-12 d-flex justify-content-center align-items-center p-5 mt-5"
         >
@@ -134,20 +128,6 @@ section#portfolio {
   }
   div.slider-counter.active {
     background-color: $secondaryLightColor;
-  }
-  .slider-wrapper {
-    max-width: calc(100vw + 500px);
-    height: 350px;
-  }
-  .ax-slider {
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-    &:first-child {
-      position: absolute;
-      left: -200px;
-      // top: 0;
-    }
   }
 }
 </style>
